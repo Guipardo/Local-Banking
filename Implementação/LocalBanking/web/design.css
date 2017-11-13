@@ -1,0 +1,82 @@
+.fundo{
+    background: linear-gradient(white,rgb(242, 242, 242)) fixed;
+}
+
+.texto{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 18px;
+    color:rgb(68, 68, 68);
+}
+
+.titulo{
+    font-family: times, Times New Roman, times-roman, georgia, serif;
+    color: rgb(68, 68, 68);
+    margin: 0;
+    padding: 0px 0px 6px 0px;
+    font-size: 51px;
+    line-height: 44px;
+    letter-spacing: -2px;
+    font-weight: bold;
+}
+
+li {
+    list-style-type: square;
+}
+
+.link{
+    
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(68, 68, 68);
+}
+
+.tudo { 
+    display: table; 
+}
+
+.menu {
+    float: left; 
+    width: 25%; 
+    border: solid 4px rgb(242, 242, 242);
+    margin-top: 1%;
+    margin-right: 2%;
+}
+
+.conteudo { 
+    background-image: url("imagens/economias.jpg");
+    margin-left: 30%;
+    margin-top: 1%;
+    padding-bottom: 40%;
+    padding-right: 5%;
+    width: 60%;
+    background-size: cover;
+}
+
+.form{
+    border: solid 2px black;
+    margin-left: 30%;
+    margin-top: 1%;
+    padding-bottom: 40%;
+    padding-right: 5%;
+    width: 60%;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 5%;
+    padding-top: 25px;
+    background-color: rgb(128, 0, 0);
+    color: rgb(242, 242, 242);
+    text-align: center;
+}
+
+.link:hover{
+    color:rgb(255, 0, 0);
+}
+
+#logotitulo{
+    padding-left: 10px;
+    padding-top: 10px;
+}
