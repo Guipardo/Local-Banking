@@ -8,7 +8,6 @@ public class Conta {
     private String senha;
     private String titular;
     
-
     public Conta() {
     }
 

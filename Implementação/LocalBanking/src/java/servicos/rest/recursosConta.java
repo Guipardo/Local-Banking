@@ -13,12 +13,18 @@ import javax.ws.rs.core.MediaType;
 public class recursosConta {
 
     @POST
-    @Path("/criar")
-    public void criar() {
+    @Path("/criar/{numero}/{agencia}/{titular}/{senha}")
+    public void criar(@PathParam("numero") final int numero,@PathParam("agencia") final int agencia,
+            @PathParam("titular") final String titular,@PathParam("senha") final String senha) {
         /* TO DO */
         DAOConta dao = new DAOConta();
         /* Pegar parametros do formulário */
         Conta conta = new Conta();
+        conta.setAgencia(agencia);
+        conta.setNumero(numero);
+        conta.setSaldo(0);
+        conta.setSenha(senha);
+        conta.setTitular(titular);
         dao.criar(conta);
     }
 
@@ -28,8 +34,7 @@ public class recursosConta {
     public Conta getConta(@PathParam("numero") final int numero) {
         /* TO DO */
         DAOConta dao = new DAOConta();
-        Conta conta = new Conta();
-        /*dao.login(numero, agencia, senha);*/
+        Conta conta = dao.ler(numero);
         return conta;
     }
 
@@ -39,8 +44,7 @@ public class recursosConta {
     public Conta getContaJson(@PathParam("numero") final int numero) {
         /* TO DO */
         DAOConta dao = new DAOConta();
-        Conta conta = new Conta();
-        /*dao.login(numero, agencia, senha);*/
+        Conta conta = dao.ler(numero);
         return conta;
     }
 

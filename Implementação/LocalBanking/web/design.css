@@ -54,11 +54,16 @@ li {
 
 .form{
     border: solid 2px black;
-    margin-left: 30%;
+    margin-left: 100%;
     margin-top: 1%;
     padding-bottom: 40%;
     padding-right: 5%;
     width: 60%;
+}
+
+input[type="text"],input[type="password"]{
+    margin-left: 1%;
+    width:25%;
 }
 
 .footer{
